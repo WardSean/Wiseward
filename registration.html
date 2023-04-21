@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wiseward</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+  <form action="register.php" method="post" id="register">
+
+    <input type="text" id="username" name="username" required placeholder="Username" required minlength="8" required
+      maxlength="26">
+    <br>
+    <input type="email" id="email" name="email" required placeholder="E-mail" required minlength="4">
+    <br>
+    <input type="password" id="password" name="password" required placeholder="Password" required minlength="8">
+    <br>
+    <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirm Password"
+      required minlength="8">
+      <br><br>
+    <label>How did you hear about us?</label>
+    <br>
+    <div id="referral_radio">
+      <div class="referral_radio">
+        <input type="radio" id="referral" name="referral" value="referral" required>
+        <label for="referral">Referral</label>
+      </div>
+      <div class="referral_radio">
+        <input type="radio" id="social-media" name="referral" value="social-media">
+        <label for="social-media">Social Media</label>
+      </div>
+      <div class="referral_radio">
+        <input type="radio" id="search-engine" name="referral" value="search-engine">
+        <label for="search-engine">Search Engine</label>
+      </div>
+    </div>
+    <br>
+    <input type="submit" value="Register" class="submit">
+  </form>
+</body>

@@ -1,0 +1,368 @@
+/* Set global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #194027;
+  font-family: Georgia, sans-serif;
+
+}
+
+body {
+  background-color: #EFF483;
+  line-height: 1.5;
+  text-decoration-color: #194027;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+  position: relative;
+}
+
+header h1 {
+  display: flex;
+  font-size: 24px;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  align-self: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.main-image {
+  position: relative;
+}
+
+.main-image img {
+  display: flex;
+  width: 100%;
+  max-height: 45em;
+  object-fit: cover;
+  transform: translateY(-24%);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.circle {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #EFF483;
+  border-radius: 50% 50% 0 0;
+  display: inline-block;
+  transform: translateY(-230px);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 725px) {
+  .circle {
+    transform: translateY(calc(-40VW + 50px));
+    background-color: #EFF483;
+    height: 10VW;
+  }
+}
+
+.main-image h1,
+.main-image p {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  align-content: center;
+  text-align: center;
+  color: #194027;
+  line-height: 1em;
+}
+
+.main-image h1 {
+  font-size: 80px;
+  min-width: 800px;
+  padding-bottom: 15%;
+  padding-top: 25%;
+}
+
+.main-image p {
+  font-size: 24px;
+  transform: translate(-50%, -2dvw);
+}
+
+@media screen and (min-width: 1652px) {
+  .main-image p {
+    transform: translate(-50%, -5vw);
+  }
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  text-align: center;
+
+}
+
+.main-image button {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 10px 20px;
+}
+
+button:hover {
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  color: #000000;
+}
+
+.main-image button:hover {
+  transform: translate(-50%, -194%);
+}
+
+.featured_products {
+  position: absolute;
+  transform: translateY(-260px);
+  transform: translateY(-40%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+.featured_products_head {
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.carousel-container {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item .product-info button {
+  background-color: #ffffffdc;
+  color: #1940279a;
+  font-size: small;
+  border: #19402725 dashed 2px;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+
+}
+
+.product-info {
+  text-align: center;
+  transform: translateY(-20px);
+}
+
+.product-info h3 {
+  padding-top: 4%;
+  font-size: 30px;
+  max-width: 250px;
+  line-height: 90%;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.product-info button {
+  background-color: #FF8BCA;
+  color: #194027;
+}
+
+.product-info button:hover {
+  border-color: white;
+  background-color: #ffb4dd;
+  opacity: 0.8;
+  color: maroon;
+}
+
+.shop button {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wearable-clothes {
+  position: static;
+  margin-bottom: 100px;
+  transform: translateY(300px)
+}
+
+.wearable-clothes img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 30vw;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#wctextcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#wctext {
+  display: flex;
+  max-width: 70vh;
+  flex-direction: column;
+  line-height: 400%;
+  text-align: center;
+  background-color: #fff6ed;
+  border-radius: 10%;
+  padding: 5%;
+  margin: 0 5% 0 5%;
+  transform: translateY(-20vw);
+}
+
+#wctext ul {
+  line-height: 200%;
+  text-align: left;
+  padding: 0 5% 0 5%;
+}
+.seuss_stripe{
+  transform: translateY(calc(200px - 20vw));
+  display: inline;
+  background-color: red;
+}
+.seuss_stripe_left_container{
+  max-width: 80vw;
+
+}
+.seuss_stripe_right_container{
+  background-color: rgb(0, 4, 255);
+  max-width: 20vw;
+
+}
+
+#seuss_stripe_left {
+
+  margin-top: 0;
+  display: flex;
+  width: 400px;
+  height: 80vw;
+  transform: skew(-10deg);
+  background: #ffb4dd;
+  rotate: 90deg;
+}
+
+#seuss_stripe_right {
+
+  display: flex;
+  width: 400px;
+  height: 80vw;
+  transform: skew(10deg);
+  background: #ffb4dd;
+  rotate: 90deg;
+}
+
+
+.follow-us {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.follow-us h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.follow-us ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.follow-us li {
+  margin: 0 10px;
+}
+
+.follow-us a {
+  color: #194027;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.follow-us a:hover {
+  text-decoration: underline;
+}
+
+.follow-us img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.follow-us img:hover {
+  opacity: 1;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-container h3,
+.product-container p,
+.product-container button {
+  margin: 0px 0;
+}

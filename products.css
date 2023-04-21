@@ -1,0 +1,52 @@
+@import "style.css";
+/* Set background color and font family */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style card container */
+  .card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+
+  /* Style card image */
+  .card-img-top {
+    display: flex;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit:contain;
+  }
+
+  
+  /* Style card title */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+  
+  /* Style card text */
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style add to cart button */
+  .btn-primary {
+    background-color: #78b9ff;
+    border-color: #007bff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
