@@ -12,8 +12,8 @@ script.js(
 -style.css(
   --index.html
   )
--products.css(
-  --products.html
+  --products.css(
+  ---products.html
   )
 )
 
