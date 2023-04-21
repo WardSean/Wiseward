@@ -22,6 +22,26 @@ header {
   width: 100%;
   position: relative;
 }
+header #profile_icon{
+  margin-right: calc(87% - 40px);
+}
+
+#navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  
+  z-index: 2;
+}
+.burger_layer{
+  width:30px;
+  height:5px;
+  background-color: #FFFFFF;
+  align-items: space-between;
+  border-radius: 15%;
+}
 
 header h1 {
   display: flex;
@@ -44,6 +64,13 @@ header img {
   top: 0;
   right: 0;
   padding: 10px;
+}
+#header_logos img{
+  width: 15%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-75vw);
 }
 
 .main-image {
@@ -365,4 +392,26 @@ button:hover {
 .product-container p,
 .product-container button {
   margin: 0px 0;
+}
+#the_team{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+#the_team img{
+  width: 30%;
+  margin: 1%;
+  
+}
+#team_hs{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  transform: translateY(100px);
+}
+#sean_hs{
+  transform: translateY(-100px);
 }

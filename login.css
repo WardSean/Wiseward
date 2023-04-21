@@ -1,4 +1,6 @@
-
+body{
+    background-color: #EFF483;
+}
 img{
     width: 5%;
     height:5%;
@@ -14,7 +16,7 @@ header{
     margin: 10px auto 0 auto;
 }
 form{
-    background-color: rgb(227, 227, 255);
+    background-color: white;
     width: 26%;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +25,17 @@ form{
     border-color: blue;
     border-width: 10px;
     border-radius: 10px;
+    min-width: 300px;
 }
+
+#need_account{
+    text-align: center;
+}
+
+#forgot_password{
+    margin-left: 21%;
+}
+
 #username, #password{
     width: 100%;
 }
